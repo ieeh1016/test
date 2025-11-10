@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIYA COFFEE - 늘 당신 곁에, 이디야 커피</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-left">
+                    <a href="#" class="brand-link">브랜드 사이트</a>
+                    <a href="#" class="brand-link">기업 사이트</a>
+                    <a href="#" class="brand-link">창업안내</a>
+                    <a href="#" class="brand-link">채용안내</a>
+                </div>
+                <div class="header-top-right">
+                    <select class="lang-select">
+                        <option value="ko">KO</option>
+                        <option value="en">EN</option>
+                        <option value="ch">CH</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="logo">
+                        <h1>EDIYA COFFEE</h1>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav-menu">
+                            <li><a href="#menu">메뉴</a></li>
+                            <li><a href="#products">유통제품</a></li>
+                            <li><a href="#members">이디야멤버스</a></li>
+                            <li><a href="#cards">상품권·제휴카드</a></li>
+                            <li><a href="#news">브랜드 소식</a></li>
+                            <li><a href="#support">고객 지원</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                        <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#menu">메뉴</a></li>
+                <li><a href="#products">유통제품</a></li>
+                <li><a href="#members">이디야멤버스</a></li>
+                <li><a href="#cards">상품권·제휴카드</a></li>
+                <li><a href="#news">브랜드 소식</a></li>
+                <li><a href="#support">고객 지원</a></li>
+                <li><a href="#" class="login-link">로그인</a></li>
+                <li><a href="#" class="store-link">매장찾기</a></li>
+            </ul>
+        </div>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-box">
+                <input type="text" placeholder="검색어를 입력하세요" id="searchInput">
+                <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 메인 배너 -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2>ALWAYS BESIDE YOU, EDIYA COFFEE</h2>
+                    <p>늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요.</p>
+                    <a href="#menu" class="btn-primary">메뉴보기</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>고품질의 원두로 최고의 커피맛을</h2>
+                    <p>최첨단 시설에서 탄생하는 고품질의 원두로 최고의 커피맛을 고객들에게 제공합니다.</p>
+                    <a href="#factory" class="btn-primary">드림 팩토리</a>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>성공 창업을 위한 선택</h2>
+                    <p>고객과 가맹점주, 협력사의 상생의 가치를 실천합니다.</p>
+                    <a href="#franchise" class="btn-primary">창업안내</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </section>
+
+    <!-- 스틱커피 정보 카드 -->
+    <section class="info-cards" id="products">
+        <div class="container">
+            <h2 class="section-title">Stick Coffee INFORMATION CARD</h2>
+            <div class="cards-grid">
+                <div class="info-card">
+                    <div class="card-icon">☕</div>
+                    <h3>스틱커피 오리지널 아메리카노</h3>
+                    <p>Stick Coffee Original Americano</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">☕</div>
+                    <h3>스틱커피 마일드 아메리카노</h3>
+                    <p>Stick Coffee Mild Americano</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">☕</div>
+                    <h3>스틱커피 스페셜 아메리카노</h3>
+                    <p>Stick Coffee Special Americano</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">☕</div>
+                    <h3>스틱커피 디카페인 아메리카노</h3>
+                    <p>Stick Coffee Decaffeinated Americano</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">☕</div>
+                    <h3>스틱커피 카페 라떼</h3>
+                    <p>Stick Coffee Caffe Latte</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">☕</div>
+                    <h3>스틱커피 바닐라 라떼</h3>
+                    <p>Stick Coffee Vanilla Latte</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">☕</div>
+                    <h3>스틱커피 토피 넛 라떼</h3>
+                    <p>Stick Coffee Toffee Nut Latte</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 드림 팩토리 -->
+    <section class="dream-factory" id="factory">
+        <div class="container">
+            <h2 class="section-title">DREAM FACTORY EDIYA COFFEE</h2>
+            <p class="section-subtitle">최첨단 시설에서 탄생하는 고품질의 원두로 최고의 커피맛을 고객들에게 제공합니다.</p>
+            <div class="factory-content">
+                <div class="factory-item">
+                    <div class="factory-image">
+                        <div class="placeholder-image">드림 팩토리</div>
+                    </div>
+                    <h3>드림 팩토리</h3>
+                </div>
+                <div class="factory-item">
+                    <div class="factory-image">
+                        <div class="placeholder-image">드림 물류센터</div>
+                    </div>
+                    <h3>드림 물류센터</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 메뉴 섹션 -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">ALWAYS BESIDE YOU, EDIYA COFFEE</h2>
+            <p class="section-subtitle">늘 당신 곁에, 이디야 커피의 다양한 메뉴를 맛보세요.</p>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="placeholder-image">음료</div>
+                    </div>
+                    <h3>음료</h3>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="placeholder-image">푸드</div>
+                    </div>
+                    <h3>푸드</h3>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <div class="placeholder-image">MD</div>
+                    </div>
+                    <h3>MD</h3>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-primary">메뉴보기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 창업 안내 -->
+    <section class="franchise-section" id="franchise">
+        <div class="container">
+            <div class="franchise-content">
+                <div class="franchise-text">
+                    <h2>고객과 가맹점주, 협력사의<br>상생의 가치를 실천합니다.</h2>
+                    <p>해외에 로열티를 내지 않는 순수한 국내브랜드로 품질좋고 맛있는 정직한 커피를 제공합니다.</p>
+                    <div class="franchise-buttons">
+                        <a href="#" class="btn-primary">창업안내</a>
+                        <a href="#" class="btn-secondary">창업설명회 안내</a>
+                        <a href="#" class="btn-secondary">브랜드소개</a>
+                    </div>
+                </div>
+                <div class="franchise-image">
+                    <div class="placeholder-image">창업 이미지</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 매장 찾기 -->
+    <section class="store-finder">
+        <div class="container">
+            <h2 class="section-title">매장찾기</h2>
+            <p class="section-subtitle">가까운 이디야 매장을 확인해보세요.</p>
+            <div class="store-search">
+                <input type="text" placeholder="지역 또는 매장명을 입력하세요" id="storeSearch">
+                <button class="btn-primary">검색</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 뉴스 섹션 -->
+    <section class="news-section" id="news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NEWS</h2>
+                <a href="#" class="more-link">more <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-date">2025.11.05</div>
+                    <h3>[매일경제TV] 이디야커피, 11월 프로모션 강화…배달...</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025.10.30</div>
+                    <h3>[데일리안] 이디야커피, 인기 보이그룹 '보이넥스트도어'...</h3>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025.10.27</div>
+                    <h3>[아이뉴스24] '이디야커피랩' 전면 리뉴...</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>EDIYA COFFEE</h4>
+                    <p>서울특별시 강남구 논현로 636 이디야빌딩<br>
+                    (서울특별시 강남구 논현동 221-17)</p>
+                    <p>TEL : 02-543-6467<br>FAX : 02-543-7191</p>
+                    <p>사업자등록번호 : 107-86-16302<br>
+                    통신판매업 신고 : 강남 제 002519호<br>
+                    대표이사 : 조규동</p>
+                </div>
+                <div class="footer-section">
+                    <h4>고객센터</h4>
+                    <ul>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">이디야 공식몰</a></li>
+                        <li><a href="#">모바일상품권 스토어</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>법적 고지</h4>
+                    <ul>
+                        <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">멤버스 이용약관</a></li>
+                        <li><a href="#">가맹 안내</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>소셜 미디어</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fas fa-blog"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 스크롤 탑 버튼 -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
